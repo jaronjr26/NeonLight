@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="first-page">
+        <div class="head">LET THERE BE LIGHT</div>
+        <div class="container-1">
+            <button id="light-1">Light me</button>
+            <button id="light-2">Light me</button>
+            <button id="light-3">Light me</button>
+            <button id="light-4">Light me</button>
+            <button id="light-5">Light me</button>
+            <button id="light-6">Light me</button>
+        </div>
+    </div>
+
+    <div class="second-page">
+        <div class="container-2">
+            <span style="--i:1"><p></p></span>
+            <span style="--i:2"><p></p></span>
+            <span style="--i:3"><p></p></span>
+            <span style="--i:4"><p></p></span>
+            <span style="--i:5"><p></p></span>
+            <span style="--i:6"><p></p></span>
+            <span style="--i:7"><p></p></span>
+            <span style="--i:8"><p></p></span>
+        </div>
+        <div id="btn">
+            <p> LIGHT ME</p>
+        </div>
+    </div>
+
+    <div class="creator">This content is created by ja pineda</div>
+    
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+
+        var light1 = $("#light-1");
+        var light2 = $("#light-2");
+        var light3 = $("#light-3");
+        var light4 = $("#light-4");
+        var light5 = $("#light-5");
+        var light6 = $("#light-6");
+        var btn = $("#btn");
+        var btnContent = $("#btn p");
+        var container2 = $(".container-2")
+        var container3 = $(".container-2 span")
+        var container4 = $(".container-2 span p")
+
+        $(document).ready(function(){
+        light1.on('click',function(){
+            light1.toggleClass('active');
+        })
+        light2.on('click',function(){
+            light2.toggleClass('active');
+        })
+        light3.on('click',function(){
+            light3.toggleClass('active');
+        })
+        light4.on('click',function(){
+            light4.toggleClass('active');
+        })
+        light5.on('click',function(){
+            light5.toggleClass('active');
+        })
+        light6.on('click',function(){
+            light6.toggleClass('active');
+        })
+        btn.on('click', function(){
+            btnContent.toggleClass('run');
+            container2.toggleClass('run')
+            container3.toggleClass('run')
+            container4.toggleClass('run')
+        })
+
+    })
+
+    </script>
+</body>
+
+
+</html>
