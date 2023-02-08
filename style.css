@@ -265,7 +265,7 @@ button{
     animation: animate-2 10s linear infinite;
     border: 2px solid skyblue;
     color:skyblue;
-    whitespace: nowrap;
+    white-space: nowrap;
 }
 #btn p.run::before{
     content: "";
